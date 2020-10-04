@@ -8,4 +8,6 @@
 chmod 755 vim-bootstrapper.sh
 ./vim-bootstrapper.sh
 cp .vimrc ~/
+
+vim +PluginInstall +qall
 ```
