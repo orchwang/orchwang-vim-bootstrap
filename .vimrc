@@ -22,6 +22,11 @@ set t_Co=256
 " for jellybeans
 colorscheme jellybeans
 
+" for NerdTree
+nmap <F6> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+
 " for taglist
 nmap <F8> :Tagbar<CR>
 

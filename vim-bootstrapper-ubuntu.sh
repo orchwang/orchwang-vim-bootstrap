@@ -9,3 +9,11 @@ mkdir -p .vim/colors
 cd ~/.vim/colors
 curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
 
+vim +PluginInstall +qall
+
+# ZSH
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# tmux
+sudo apt-get install tmux
