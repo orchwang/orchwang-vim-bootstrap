@@ -11,9 +11,11 @@ curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/
 
 vim +PluginInstall +qall
 
+# tmux
+sudo apt-get install tmux
+
 # ZSH
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo '[[ $TERM != "screen" ]] && exec tmux' >> ~/.zshrc
 
-# tmux
-sudo apt-get install tmux
