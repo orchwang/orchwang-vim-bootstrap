@@ -19,16 +19,23 @@ call vundle#end()
 
 set t_Co=256
 
+" settings for indentation
+set smartindent
+set tabstop=4
+set expandtab
+set shiftwidth=4
+
 " for jellybeans
 colorscheme jellybeans
 
 " for NerdTree
-nmap <F6> :NERDTreeToggle<CR>
+let mapleader = ","
+nnoremap <leader>r :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 
 " for taglist
-nmap <F8> :Tagbar<CR>
+nnoremap <leader>t :Tagbar<CR>
 
 " for indent guide
 let g:indentguides_spacechar = '┆'
@@ -41,7 +48,6 @@ let g:indent_guides_guide_size=1
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 let g:airline_theme='hybrid'
 set laststatus=2 " turn on bottom bar
-let mapleader = ","
 nnoremap <leader>q :bp<CR>
 nnoremap <leader>w :bn<CR>
 
